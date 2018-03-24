@@ -24,14 +24,14 @@
 
 		/* Sections
 		 * --------------------------------------- */
-		#section0 img,
-		#section1 img{
+		#section-accueil img,
+		#section-cequonfait img{
 			margin: 20px 0 0 0;
 		}
-		#section2 img{
+		#section-quionest img{
 			margin: 20px 0 0 52px;
 		}
-		#section3 img{
+		#section-contact img{
 			bottom: 0px;
 			position: absolute;
 			margin-left: -420px;
@@ -75,10 +75,12 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#ccddff', '#7BAABE', 'whitesmoke'],
+				anchors: ['accueil', 'cequonfait', 'video', 'quionest', 'contact', 'lastPage'],
 				menu: '#menu',
-				scrollingSpeed: 1000
+				scrollingSpeed: 1000,
+				navigation: true,
+				slidesNavigation: true
 			});
 
 		});
@@ -89,23 +91,24 @@
 <body>
 
 	<ul id="menu">
-		<li data-menuanchor="firstPage"><a href="#firstPage">Accueil</a></li>
-		<li data-menuanchor="secondPage"><a href="#secondPage">Ce qu'on fait ?</a></li>
-		<li data-menuanchor="3rdPage"><a href="#3rdPage">Qui on est ?</a></li>
-		<li data-menuanchor="4thpage"><a href="#4thpage">Contact</a></li>
+		<li data-menuanchor="accueil"><a href="#accueil">Accueil</a></li>
+		<li data-menuanchor="cequonfait"><a href="#cequonfait">Ce qu'on fait ?</a></li>
+		<li data-menuanchor="video"><a href="#video">Quelques vidéos</a></li>
+		<li data-menuanchor="quionest"><a href="#quionest">Qui on est ?</a></li>
+		<li data-menuanchor="contact"><a href="#contact">Contact</a></li>
 	</ul>
 
 	<div id="fullpage">
-		<div class="section " id="section0">
+		<div class="section " id="section-accueil">
 			<h1>CAILLY TP</h1>
 			<p><i>Terrassement et assainissement en Basse Normandie</i></p>
 			<img class="logo" src="img/mecalac_logo.png" alt="fullPage" />
 			<p>
-				<a class="button" href="#secondPage">En savoir plus</a>
-				<a class="button" href="#4thpage">Contact</a>
+				<a class="button" href="#cequonfait">En savoir plus</a>
+				<a class="button" href="#contact">Contact</a>
 			</p>
 		</div>
-		<div class="section" id="section1">
+		<div class="section" id="section-cequonfait">
 		    <div class="slide">
 				<div class="intro">
 					<p>
@@ -171,7 +174,23 @@
 				</div>
 			</div>
 		</div>
-		<div class="section" id="section2">
+		<div class="section" id="section-video">
+		    <div class="slide">
+				<div class="intro">
+					<div class="video-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/DIHPI_T6FU0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>				
+			</div>
+		    <div class="slide">
+				<div class="intro">
+					<div class="video-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/It3U-XFhL3A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section-quionest">
 			<div class="intro">
 				<h1>Qui on est ?</h1>
 				<p>Deux chauffeurs expérimentés !</p>
@@ -189,7 +208,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section" id="section3">
+		<div class="section" id="section-contact">
 			<div class="contact">
 				<h1>Comment peut-on vous aider ?</h1>
 				<p>

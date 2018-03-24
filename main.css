@@ -295,4 +295,41 @@ form {
  #section3 p{
  	font-size: 1.3em;
  }
+ 
+/* Nav
+ * --------------------------------------- */
+ 
 
+.fp-slidesNav>ul>li>a>span{
+	background: grey;
+}
+#fp-nav>ul>li>a>span{
+	background: grey;
+}
+.fp-controlArrow.fp-next{
+	right: 50px;
+}
+.fp-controlArrow.fp-prev{
+	left: 50px;
+}
+
+/* Youtube
+ * --------------------------------------- */
+/*https://clic-en-berry.com/comment-rendre-vos-integrations-iframe-youtube-responsive/*/ 
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 10%;
+left: 10%;
+width: 80%;
+height: 60%;
+}
